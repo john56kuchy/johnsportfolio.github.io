@@ -727,3 +727,238 @@ team section style start
 .heading-color {
   color: var(--accent-color);
 }
+
+.service-icon-wrapper {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex-shrink: 0;
+    }
+    
+    .service-icon-wrapper:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(242, 102, 73, 0.15);
+    }
+    
+    .service-content {
+        flex: 1;
+    }
+    
+    .tech-stack .badge {
+        font-size: 0.75rem;
+        padding: 0.25em 0.75em;
+        font-weight: 500;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .icon-link i {
+        transition: transform 0.3s ease;
+    }
+    
+    .icon-link:hover i {
+        transform: translateX(3px);
+    }
+    
+    @media (max-width: 768px) {
+        .service-icon-wrapper {
+            padding: 0.75rem !important;
+        }
+        
+        .service-icon-wrapper img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+     .skill-icon-card {
+        background: white;
+        border: 1px solid rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        height: 100%;
+    }
+    
+    .skill-icon-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(242, 102, 73, 0.15);
+        border-color: var(--accent-color);
+    }
+    
+    .skill-icon-card .icon-wrapper {
+        transition: transform 0.3s ease;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .skill-icon-card:hover .icon-wrapper {
+        transform: scale(1.1);
+    }
+    
+    .skill-badge {
+        background: rgba(0,0,0,0.03);
+        border: 1px solid rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
+    }
+    
+    .skill-badge:hover {
+        background: white;
+        border-color: var(--accent-color);
+        transform: translateY(-2px);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .skill-icon-card {
+            padding: 1rem !important;
+        }
+        
+        .skill-icon-card h6 {
+            font-size: 0.9rem;
+        }
+        
+        .skill-icon-card p {
+            font-size: 0.75rem;
+        }
+        
+        .skill-badge {
+            font-size: 0.8rem;
+        }
+    }
+
+     /* Experience Timeline Styles */
+    .experience-timeline {
+        position: relative;
+        padding-left: 30px;
+    }
+    
+    .timeline-line {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(to bottom, var(--accent-color), var(--secondary-color));
+        border-radius: 3px;
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    
+    .timeline-item.left {
+        padding-right: 50%;
+    }
+    
+    .timeline-item.right {
+        padding-left: 50%;
+    }
+    
+    .timeline-content {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .timeline-content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    
+    .timeline-marker {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: white;
+        border: 3px solid var(--accent-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-color);
+        font-size: 1rem;
+        top: 20px;
+        z-index: 2;
+    }
+    
+    .timeline-item.left .timeline-marker {
+        right: calc(50% - 20px);
+    }
+    
+    .timeline-item.right .timeline-marker {
+        left: calc(50% - 20px);
+    }
+    
+    .timeline-date .badge {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+    }
+    
+    .achievements ul li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    
+    .achievements ul li i {
+        min-width: 16px;
+    }
+    
+    .project-item {
+        border-left: 3px solid var(--accent-color);
+        padding-left: 15px;
+        margin-left: 5px;
+    }
+    
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .integration-card {
+        background: rgba(242, 102, 73, 0.05);
+        border-radius: 10px;
+        border: 1px solid rgba(242, 102, 73, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .integration-card:hover {
+        background: rgba(242, 102, 73, 0.1);
+        transform: translateY(-3px);
+    }
+    
+    .integration-icon {
+        color: var(--accent-color);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .experience-timeline {
+            padding-left: 20px;
+        }
+        
+        .timeline-item.left,
+        .timeline-item.right {
+            padding: 0;
+            padding-left: 40px;
+        }
+        
+        .timeline-marker {
+            left: 0 !important;
+        }
+        
+        .timeline-line {
+            left: 10px;
+        }
+        
+        .timeline-header {
+            flex-direction: column;
+            align-items: flex-start !important;
+        }
+        
+        .timeline-date {
+            margin-top: 10px;
+        }
+    }
+    
